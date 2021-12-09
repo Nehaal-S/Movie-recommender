@@ -1,0 +1,62 @@
+{% extends "base.html" %}
+{% block content %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel ="stylesheet" type ="text/css" href = "{{ url_for('static', filename='main.css') }}">
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Redressed&display=swap" rel="stylesheet">
+
+    <div class ="container-fluid" id="heading1container" > 
+        <div class = "row">
+            <h1 id="heading1">Find Something!</h1>
+            <div class="form-group">
+                <form action='' method="POST" >
+                    <input type="text" name="movie_search">
+                    <input type="submit" value="Search">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+        <div class ="row" id="heading1container">
+            <h1 id="heading1"> Results </h1>
+        </div>
+        <div class ="row" id="heading1container">
+            <div class = "col" id ="heading2container">
+                <h2 id="heading2"> Movies </h2>
+                {% if json_data_movie %}
+                    {% for data in json_data_movie['results']: %}
+                        <div id="movieblock">
+                            <!-- <a href='/post_movie_to_db' name='movieinfo'>  {{ data['title'] }} {{ data['id'] }} </a> <!-->
+                            <div class="row">
+                                <img src = "https://image.tmdb.org/t/p/original{{data['poster_path']}}" ></img>
+                            </div>
+                            <div class="row">
+                                <a href="{{url_for('content_info', id = data['id'], content_type = 'movie' )}}" id="list">  {{ data['title'] }} </a>
+                            </div>
+                            <br>
+                        </div>
+                    {% endfor %}
+                {% endif %}
+            </div>
+            <div class = "col" id ="heading2container">
+                <h2 id="heading2"> TV-Shows </h2>
+                <div class="row">
+                    {% if json_data_tv %}
+                        {% for data in json_data_tv['results']: %}
+                            <div id="movieblock">
+                                <div class ="row">
+                                    <img src = "https://image.tmdb.org/t/p/original{{data['poster_path']}}" ></img>
+                                </div>
+                                <div class = "row">
+                                    <a href="{{url_for('content_info', id = data['id'], content_type = 'tv' )}}" id="list">  {{ data['name'] }} </a>
+                                </div>
+                                <br>         
+                            </div>          
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

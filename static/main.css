@@ -1,0 +1,207 @@
+
+/*  edges of main divs , Color of text on register and login  */
+body {
+  background-color: #000000  ;
+ 
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  color: #35bd30;
+}
+
+.bg-steel {
+  background-color: #000000;
+}
+
+/*  nav bar links   */
+.site-header .navbar-nav .nav-link {
+  color: #ffffff;
+}
+
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #53b92b;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+/* Login body  */ 
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #000000;
+  border-radius: 3px;
+  margin-bottom: 20px;
+}
+
+.article-title {
+  color: #27b422;
+}
+
+a.article-title:hover {
+  color: #00ff0d;
+  text-decoration: none;
+}
+
+.article-content {
+  white-space: pre-line;
+}
+
+.article-img {
+  height: 65px;
+  width: 65px;
+  margin-right: 16px;
+}
+
+.article-metadata {
+  padding-bottom: 1px;
+  margin-bottom: 4px;
+  border-bottom: 1px solid #e3e3e3
+}
+
+.article-metadata a:hover {
+  color: rgb(39, 196, 47);
+  text-decoration: none;
+}
+
+.article-svg {
+  width: 25px;
+  height: 25px;
+  vertical-align: middle;
+}
+
+.account-img {
+  height: 125px;
+  width: 125px;
+  margin-right: 20px;
+  margin-bottom: 16px;
+}
+
+.account-heading {
+  font-size: 2.5rem;
+}
+
+#filtercontainer
+{
+  padding: 20px 20px;
+  background-color:  #000000;
+  border-style:solid;
+  border-radius: 20px;
+  margin-top: 10pt;
+  margin-bottom: 10pt;
+}
+
+/* nav bar of site */ 
+#siteheader{
+  background-color: #1b1919  ;
+}
+
+/* space between top and bot div on main page idek */ 
+#maincontainer
+{
+  border-radius: 20px;
+  background:#ffffff00  ;
+}
+
+
+#heading1
+{
+    margin-top: 20px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 75px;
+    color: rgb(255, 255, 255);
+}
+
+/* bg of main divs */ 
+#heading1container
+{
+  background:#000000 ;
+  padding: 20px 20px;
+  border-style:solid;
+  border-radius: 20px;
+  margin-top: 25pt;
+  margin-bottom: 50pt;
+  text-align: center;
+
+}
+
+#heading2
+{
+    font-family:'Courier New', Courier, monospace;
+    border-radius: 10px;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+/* container for entire tv/movie section */ 
+#heading2container
+{
+  background: #000000    ;
+  padding: 10px 20px #dddddd;
+  border-radius: 20px;
+  margin-left:50pt;
+}
+
+#heading3
+{
+    font-family:'Courier New', Courier, monospace;
+    font-size: 25px;
+    color: rgb(255, 255, 255);
+    margin-top:10px;
+    text-align: center;
+  
+}
+
+#list{
+  font-family:'Courier New', Courier, monospace;
+  background: #4d5b67  ;
+  padding: 20px 20px;
+  border: 1px solid;
+  border-radius: 10px;
+  margin-top: 10pt;
+  color: white;
+}
+
+/* container for indiv tv/movie  */ 
+#movieblock{
+  background-color:#000000   ;
+  padding: 20px 20px;
+  border-style:solid;
+  border-radius: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#displaytitle{
+  
+  text-align: center;
+  padding: 10px;
+  border-radius: auto;
+  margin: auto;
+  color: white;
+  font-size: 25pt;
+  font-family:'Courier New', Courier, monospace;
+}
+
+#overview
+{
+    margin-left: 10px;
+    font-family:'Courier New', Courier, monospace;
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+#smallposter{
+  margin:0 auto;
+  width: 30em;
+}
+
+#usercontent{
+  margin-top: 10pt;
+  width: 30em;
+}
